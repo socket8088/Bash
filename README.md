@@ -11,4 +11,4 @@ RDP Service on port 3389 OS Detection
 This script uses xfreerdp, a opensource RDP client
 Also it uses 2 OCRs:
 	- tesseract
-  - gocr
+	- gocr
