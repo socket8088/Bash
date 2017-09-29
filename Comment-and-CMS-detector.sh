@@ -99,7 +99,10 @@ done
 function CommentSearch(){
 while read line; do
 	echo "[*] Extracting comments in URL: "$line
+	# Comment Searcher
 	curl -s "$line" | sed ':a;N;$!ba;s/\n//g' | egrep -o '(<\!--[^>]*-->|<\!--[^-]*-->)'
+	# CMS detector
+	### curl -s "$line" | egrep -i '(wordpress|joomla|drupal)'	
 done < $1
 }
 
