@@ -1,6 +1,6 @@
 # Bash
 
-1) CommentSearcher.sh
+1) Comment-and-CMS-detector.sh
 Bash script that crawl href links and after looks for comments in webpages. (for a CTF)
 
 
